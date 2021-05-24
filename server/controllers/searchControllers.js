@@ -17,7 +17,7 @@ searchControllers.sendUserSearch = (req, res, next) => {
     term: 'restaurants',
     location: location,
     categories: categories,
-    limit: 9,
+    limit: 5,
   })
   .then((data) => {
     return JSON.parse(data.body);
